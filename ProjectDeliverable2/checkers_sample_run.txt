@@ -1,0 +1,928 @@
+PS C:\Users\howfe\Desktop\Assignment2> ./gradlew --console plain run
+> Task :app:compileJava UP-TO-DATE
+> Task :app:processResources NO-SOURCE
+> Task :app:classes UP-TO-DATE
+
+> Task :app:run
+
+8|_|o|_|o|_|o|_|o|
+7|o|_|o|_|o|_|o|_|
+6|_|o|_|o|_|o|_|o|
+5|_|_|_|_|_|_|_|_|
+4|_|_|_|_|_|_|_|_|
+3|x|_|x|_|x|_|x|_|
+2|_|x|_|x|_|x|_|x|
+1|x|_|x|_|x|_|x|_|
+  a b c d e f g h
+
+Begin Game. Player X - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+cheese
+Input does not match appropiate format: "[1-8][a-h]-[1-8][a-h]".
+9j-9j
+Input does not match appropiate format: "[1-8][a-h]-[1-8][a-h]".
+12-12
+Input does not match appropiate format: "[1-8][a-h]-[1-8][a-h]".
+8a-8j
+Input does not match appropiate format: "[1-8][a-h]-[1-8][a-h]".
+1a-1a
+Inputted move is not valid. Try again.
+1a-2b
+Inputted move is not valid. Try again.
+6b-5a
+You cannot move another player's piece!
+6h-5g
+You cannot move another player's piece!
+3a-4b
+
+8|_|o|_|o|_|o|_|o|
+7|o|_|o|_|o|_|o|_|
+6|_|o|_|o|_|o|_|o|
+5|_|_|_|_|_|_|_|_|
+4|_|x|_|_|_|_|_|_|
+3|_|_|x|_|x|_|x|_|
+2|_|x|_|x|_|x|_|x|
+1|x|_|x|_|x|_|x|_|
+  a b c d e f g h
+
+Player O - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+6b-5a
+
+8|_|o|_|o|_|o|_|o|
+7|o|_|o|_|o|_|o|_|
+6|_|_|_|o|_|o|_|o|
+5|o|_|_|_|_|_|_|_|
+4|_|x|_|_|_|_|_|_|
+3|_|_|x|_|x|_|x|_|
+2|_|x|_|x|_|x|_|x|
+1|x|_|x|_|x|_|x|_|
+  a b c d e f g h
+
+Player X - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+4b-5c
+
+8|_|o|_|o|_|o|_|o|
+7|o|_|o|_|o|_|o|_|
+6|_|_|_|o|_|o|_|o|
+5|o|_|x|_|_|_|_|_|
+4|_|_|_|_|_|_|_|_|
+3|_|_|x|_|x|_|x|_|
+2|_|x|_|x|_|x|_|x|
+1|x|_|x|_|x|_|x|_|
+  a b c d e f g h
+
+Player O - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+6d-6d
+Inputted move is not valid. Try again.
+6d-5c
+Inputted move is not valid. Try again.
+6d-5e
+
+8|_|o|_|o|_|o|_|o|
+7|o|_|o|_|o|_|o|_|
+6|_|_|_|_|_|o|_|o|
+5|o|_|x|_|o|_|_|_|
+4|_|_|_|_|_|_|_|_|
+3|_|_|x|_|x|_|x|_|
+2|_|x|_|x|_|x|_|x|
+1|x|_|x|_|x|_|x|_|
+  a b c d e f g h
+
+Player X - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+3g-4f
+
+8|_|o|_|o|_|o|_|o|
+7|o|_|o|_|o|_|o|_|
+6|_|_|_|_|_|o|_|o|
+5|o|_|x|_|o|_|_|_|
+4|_|_|_|_|_|x|_|_|
+3|_|_|x|_|x|_|_|_|
+2|_|x|_|x|_|x|_|x|
+1|x|_|x|_|x|_|x|_|
+  a b c d e f g h
+
+Player O - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+5e-3g
+
+8|_|o|_|o|_|o|_|o|
+7|o|_|o|_|o|_|o|_|
+6|_|_|_|_|_|o|_|o|
+5|o|_|x|_|_|_|_|_|
+4|_|_|_|_|_|_|_|_|
+3|_|_|x|_|x|_|o|_|
+2|_|x|_|x|_|x|_|x|
+1|x|_|x|_|x|_|x|_|
+  a b c d e f g h
+
+Player X - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+5c-6b
+
+8|_|o|_|o|_|o|_|o|
+7|o|_|o|_|o|_|o|_|
+6|_|x|_|_|_|o|_|o|
+5|o|_|_|_|_|_|_|_|
+4|_|_|_|_|_|_|_|_|
+3|_|_|x|_|x|_|o|_|
+2|_|x|_|x|_|x|_|x|
+1|x|_|x|_|x|_|x|_|
+  a b c d e f g h
+
+Player O - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+7a-5c
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|o|_|o|_|o|_|
+6|_|_|_|_|_|o|_|o|
+5|o|_|o|_|_|_|_|_|
+4|_|_|_|_|_|_|_|_|
+3|_|_|x|_|x|_|o|_|
+2|_|x|_|x|_|x|_|x|
+1|x|_|x|_|x|_|x|_|
+  a b c d e f g h
+
+Player X - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+3c-5a
+Inputted move is not valid. Try again.
+3c-4qa
+Input does not match appropiate format: "[1-8][a-h]-[1-8][a-h]".
+3c-4a
+Inputted move is not valid. Try again.
+3c-4b
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|o|_|o|_|o|_|
+6|_|_|_|_|_|o|_|o|
+5|o|_|o|_|_|_|_|_|
+4|_|x|_|_|_|_|_|_|
+3|_|_|_|_|x|_|o|_|
+2|_|x|_|x|_|x|_|x|
+1|x|_|x|_|x|_|x|_|
+  a b c d e f g h
+
+Player O - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+5c-3a
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|o|_|o|_|o|_|
+6|_|_|_|_|_|o|_|o|
+5|o|_|_|_|_|_|_|_|
+4|_|_|_|_|_|_|_|_|
+3|o|_|_|_|x|_|o|_|
+2|_|x|_|x|_|x|_|x|
+1|x|_|x|_|x|_|x|_|
+  a b c d e f g h
+
+Player X - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+2h-4f
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|o|_|o|_|o|_|
+6|_|_|_|_|_|o|_|o|
+5|o|_|_|_|_|_|_|_|
+4|_|_|_|_|_|x|_|_|
+3|o|_|_|_|x|_|_|_|
+2|_|x|_|x|_|x|_|_|
+1|x|_|x|_|x|_|x|_|
+  a b c d e f g h
+
+Player O - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+6f-5g
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|o|_|o|_|o|_|
+6|_|_|_|_|_|_|_|o|
+5|o|_|_|_|_|_|o|_|
+4|_|_|_|_|_|x|_|_|
+3|o|_|_|_|x|_|_|_|
+2|_|x|_|x|_|x|_|_|
+1|x|_|x|_|x|_|x|_|
+  a b c d e f g h
+
+Player X - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+4f-5e
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|o|_|o|_|o|_|
+6|_|_|_|_|_|_|_|o|
+5|o|_|_|_|x|_|o|_|
+4|_|_|_|_|_|_|_|_|
+3|o|_|_|_|x|_|_|_|
+2|_|x|_|x|_|x|_|_|
+1|x|_|x|_|x|_|x|_|
+  a b c d e f g h
+
+Player O - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+7e-6d
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|o|_|_|_|o|_|
+6|_|_|_|o|_|_|_|o|
+5|o|_|_|_|x|_|o|_|
+4|_|_|_|_|_|_|_|_|
+3|o|_|_|_|x|_|_|_|
+2|_|x|_|x|_|x|_|_|
+1|x|_|x|_|x|_|x|_|
+  a b c d e f g h
+
+Player X - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+5e-6f
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|o|_|_|_|o|_|
+6|_|_|_|o|_|x|_|o|
+5|o|_|_|_|_|_|o|_|
+4|_|_|_|_|_|_|_|_|
+3|o|_|_|_|x|_|_|_|
+2|_|x|_|x|_|x|_|_|
+1|x|_|x|_|x|_|x|_|
+  a b c d e f g h
+
+Player O - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+7g-5f
+Inputted move is not valid. Try again.
+7g-5e
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|o|_|_|_|_|_|
+6|_|_|_|o|_|_|_|o|
+5|o|_|_|_|o|_|o|_|
+4|_|_|_|_|_|_|_|_|
+3|o|_|_|_|x|_|_|_|
+2|_|x|_|x|_|x|_|_|
+1|x|_|x|_|x|_|x|_|
+  a b c d e f g h
+
+Player X - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+3e-4f
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|o|_|_|_|_|_|
+6|_|_|_|o|_|_|_|o|
+5|o|_|_|_|o|_|o|_|
+4|_|_|_|_|_|x|_|_|
+3|o|_|_|_|_|_|_|_|
+2|_|x|_|x|_|x|_|_|
+1|x|_|x|_|x|_|x|_|
+  a b c d e f g h
+
+Player O - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+5g-3e
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|o|_|_|_|_|_|
+6|_|_|_|o|_|_|_|o|
+5|o|_|_|_|o|_|_|_|
+4|_|_|_|_|_|_|_|_|
+3|o|_|_|_|o|_|_|_|
+2|_|x|_|x|_|x|_|_|
+1|x|_|x|_|x|_|x|_|
+  a b c d e f g h
+
+Player X - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+2d-4f
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|o|_|_|_|_|_|
+6|_|_|_|o|_|_|_|o|
+5|o|_|_|_|o|_|_|_|
+4|_|_|_|_|_|x|_|_|
+3|o|_|_|_|_|_|_|_|
+2|_|x|_|_|_|x|_|_|
+1|x|_|x|_|x|_|x|_|
+  a b c d e f g h
+
+Player O - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+5e-3g
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|o|_|_|_|_|_|
+6|_|_|_|o|_|_|_|o|
+5|o|_|_|_|_|_|_|_|
+4|_|_|_|_|_|_|_|_|
+3|o|_|_|_|_|_|o|_|
+2|_|x|_|_|_|x|_|_|
+1|x|_|x|_|x|_|x|_|
+  a b c d e f g h
+
+Player X - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+2f-4h
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|o|_|_|_|_|_|
+6|_|_|_|o|_|_|_|o|
+5|o|_|_|_|_|_|_|_|
+4|_|_|_|_|_|_|_|x|
+3|o|_|_|_|_|_|_|_|
+2|_|x|_|_|_|_|_|_|
+1|x|_|x|_|x|_|x|_|
+  a b c d e f g h
+
+Player O - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+6d-5e
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|o|_|_|_|_|_|
+6|_|_|_|_|_|_|_|o|
+5|o|_|_|_|o|_|_|_|
+4|_|_|_|_|_|_|_|x|
+3|o|_|_|_|_|_|_|_|
+2|_|x|_|_|_|_|_|_|
+1|x|_|x|_|x|_|x|_|
+  a b c d e f g h
+
+Player X - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+4h-5g
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|o|_|_|_|_|_|
+6|_|_|_|_|_|_|_|o|
+5|o|_|_|_|o|_|x|_|
+4|_|_|_|_|_|_|_|_|
+3|o|_|_|_|_|_|_|_|
+2|_|x|_|_|_|_|_|_|
+1|x|_|x|_|x|_|x|_|
+  a b c d e f g h
+
+Player O - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+6h-4f
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|o|_|_|_|_|_|
+6|_|_|_|_|_|_|_|_|
+5|o|_|_|_|o|_|_|_|
+4|_|_|_|_|_|o|_|_|
+3|o|_|_|_|_|_|_|_|
+2|_|x|_|_|_|_|_|_|
+1|x|_|x|_|x|_|x|_|
+  a b c d e f g h
+
+Player X - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+2b-3c
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|o|_|_|_|_|_|
+6|_|_|_|_|_|_|_|_|
+5|o|_|_|_|o|_|_|_|
+4|_|_|_|_|_|o|_|_|
+3|o|_|x|_|_|_|_|_|
+2|_|_|_|_|_|_|_|_|
+1|x|_|x|_|x|_|x|_|
+  a b c d e f g h
+
+Player O - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+3a-2b
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|o|_|_|_|_|_|
+6|_|_|_|_|_|_|_|_|
+5|o|_|_|_|o|_|_|_|
+4|_|_|_|_|_|o|_|_|
+3|_|_|x|_|_|_|_|_|
+2|_|o|_|_|_|_|_|_|
+1|x|_|x|_|x|_|x|_|
+  a b c d e f g h
+
+Player X - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+1c-3a
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|o|_|_|_|_|_|
+6|_|_|_|_|_|_|_|_|
+5|o|_|_|_|o|_|_|_|
+4|_|_|_|_|_|o|_|_|
+3|x|_|x|_|_|_|_|_|
+2|_|_|_|_|_|_|_|_|
+1|x|_|_|_|x|_|x|_|
+  a b c d e f g h
+
+Player O - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+5e-4d
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|o|_|_|_|_|_|
+6|_|_|_|_|_|_|_|_|
+5|o|_|_|_|_|_|_|_|
+4|_|_|_|o|_|o|_|_|
+3|x|_|x|_|_|_|_|_|
+2|_|_|_|_|_|_|_|_|
+1|x|_|_|_|x|_|x|_|
+  a b c d e f g h
+
+Player X - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+3a-4b
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|o|_|_|_|_|_|
+6|_|_|_|_|_|_|_|_|
+5|o|_|_|_|_|_|_|_|
+4|_|x|_|o|_|o|_|_|
+3|_|_|x|_|_|_|_|_|
+2|_|_|_|_|_|_|_|_|
+1|x|_|_|_|x|_|x|_|
+  a b c d e f g h
+
+Player O - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+4d-2b
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|o|_|_|_|_|_|
+6|_|_|_|_|_|_|_|_|
+5|o|_|_|_|_|_|_|_|
+4|_|x|_|_|_|o|_|_|
+3|_|_|_|_|_|_|_|_|
+2|_|o|_|_|_|_|_|_|
+1|x|_|_|_|x|_|x|_|
+  a b c d e f g h
+
+Player X - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+1a-3c
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|o|_|_|_|_|_|
+6|_|_|_|_|_|_|_|_|
+5|o|_|_|_|_|_|_|_|
+4|_|x|_|_|_|o|_|_|
+3|_|_|x|_|_|_|_|_|
+2|_|_|_|_|_|_|_|_|
+1|_|_|_|_|x|_|x|_|
+  a b c d e f g h
+
+Player O - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+7c-6b
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|_|_|_|_|_|_|
+6|_|o|_|_|_|_|_|_|
+5|o|_|_|_|_|_|_|_|
+4|_|x|_|_|_|o|_|_|
+3|_|_|x|_|_|_|_|_|
+2|_|_|_|_|_|_|_|_|
+1|_|_|_|_|x|_|x|_|
+  a b c d e f g h
+
+Player X - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+4b-5c
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|_|_|_|_|_|_|
+6|_|o|_|_|_|_|_|_|
+5|o|_|x|_|_|_|_|_|
+4|_|_|_|_|_|o|_|_|
+3|_|_|x|_|_|_|_|_|
+2|_|_|_|_|_|_|_|_|
+1|_|_|_|_|x|_|x|_|
+  a b c d e f g h
+
+Player O - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+6b-4d
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|_|_|_|_|_|_|
+6|_|_|_|_|_|_|_|_|
+5|o|_|_|_|_|_|_|_|
+4|_|_|_|o|_|o|_|_|
+3|_|_|x|_|_|_|_|_|
+2|_|_|_|_|_|_|_|_|
+1|_|_|_|_|x|_|x|_|
+  a b c d e f g h
+
+Player X - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+3c-5e
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|_|_|_|_|_|_|
+6|_|_|_|_|_|_|_|_|
+5|o|_|_|_|x|_|_|_|
+4|_|_|_|_|_|o|_|_|
+3|_|_|_|_|_|_|_|_|
+2|_|_|_|_|_|_|_|_|
+1|_|_|_|_|x|_|x|_|
+  a b c d e f g h
+
+Player O - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+4f-3e
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|_|_|_|_|_|_|
+6|_|_|_|_|_|_|_|_|
+5|o|_|_|_|x|_|_|_|
+4|_|_|_|_|_|_|_|_|
+3|_|_|_|_|o|_|_|_|
+2|_|_|_|_|_|_|_|_|
+1|_|_|_|_|x|_|x|_|
+  a b c d e f g h
+
+Player X - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+1e-2f
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|_|_|_|_|_|_|
+6|_|_|_|_|_|_|_|_|
+5|o|_|_|_|x|_|_|_|
+4|_|_|_|_|_|_|_|_|
+3|_|_|_|_|o|_|_|_|
+2|_|_|_|_|_|x|_|_|
+1|_|_|_|_|_|_|x|_|
+  a b c d e f g h
+
+Player O - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+3e-2d
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|_|_|_|_|_|_|
+6|_|_|_|_|_|_|_|_|
+5|o|_|_|_|x|_|_|_|
+4|_|_|_|_|_|_|_|_|
+3|_|_|_|_|_|_|_|_|
+2|_|_|_|o|_|x|_|_|
+1|_|_|_|_|_|_|x|_|
+  a b c d e f g h
+
+Player X - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+5e=6d
+Input does not match appropiate format: "[1-8][a-h]-[1-8][a-h]".
+4e-6d
+Inputted move is not valid. Try again.
+5e-6d
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|_|_|_|_|_|_|
+6|_|_|_|x|_|_|_|_|
+5|o|_|_|_|_|_|_|_|
+4|_|_|_|_|_|_|_|_|
+3|_|_|_|_|_|_|_|_|
+2|_|_|_|o|_|x|_|_|
+1|_|_|_|_|_|_|x|_|
+  a b c d e f g h
+
+Player O - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+2d-1c
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|_|_|_|_|_|_|
+6|_|_|_|x|_|_|_|_|
+5|o|_|_|_|_|_|_|_|
+4|_|_|_|_|_|_|_|_|
+3|_|_|_|_|_|_|_|_|
+2|_|_|_|_|_|x|_|_|
+1|_|_|o|_|_|_|x|_|
+  a b c d e f g h
+
+Player X - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+1c-1c
+Inputted move is not valid. Try again.
+2f-3e
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|_|_|_|_|_|_|
+6|_|_|_|x|_|_|_|_|
+5|o|_|_|_|_|_|_|_|
+4|_|_|_|_|_|_|_|_|
+3|_|_|_|_|x|_|_|_|
+2|_|_|_|_|_|_|_|_|
+1|_|_|o|_|_|_|x|_|
+  a b c d e f g h
+
+Player O - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+5a-4b
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|_|_|_|_|_|_|
+6|_|_|_|x|_|_|_|_|
+5|_|_|_|_|_|_|_|_|
+4|_|o|_|_|_|_|_|_|
+3|_|_|_|_|x|_|_|_|
+2|_|_|_|_|_|_|_|_|
+1|_|_|o|_|_|_|x|_|
+  a b c d e f g h
+
+Player X - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+3e-4f
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|_|_|_|_|_|_|
+6|_|_|_|x|_|_|_|_|
+5|_|_|_|_|_|_|_|_|
+4|_|o|_|_|_|x|_|_|
+3|_|_|_|_|_|_|_|_|
+2|_|_|_|_|_|_|_|_|
+1|_|_|o|_|_|_|x|_|
+  a b c d e f g h
+
+Player O - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+4b-3a
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|_|_|_|_|_|_|
+6|_|_|_|x|_|_|_|_|
+5|_|_|_|_|_|_|_|_|
+4|_|_|_|_|_|x|_|_|
+3|o|_|_|_|_|_|_|_|
+2|_|_|_|_|_|_|_|_|
+1|_|_|o|_|_|_|x|_|
+  a b c d e f g h
+
+Player X - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+4f-5e
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|_|_|_|_|_|_|
+6|_|_|_|x|_|_|_|_|
+5|_|_|_|_|x|_|_|_|
+4|_|_|_|_|_|_|_|_|
+3|o|_|_|_|_|_|_|_|
+2|_|_|_|_|_|_|_|_|
+1|_|_|o|_|_|_|x|_|
+  a b c d e f g h
+
+Player O - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+3a-2b
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|_|_|_|_|_|_|
+6|_|_|_|x|_|_|_|_|
+5|_|_|_|_|x|_|_|_|
+4|_|_|_|_|_|_|_|_|
+3|_|_|_|_|_|_|_|_|
+2|_|o|_|_|_|_|_|_|
+1|_|_|o|_|_|_|x|_|
+  a b c d e f g h
+
+Player X - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+5e-6f
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|_|_|_|_|_|_|
+6|_|_|_|x|_|x|_|_|
+5|_|_|_|_|_|_|_|_|
+4|_|_|_|_|_|_|_|_|
+3|_|_|_|_|_|_|_|_|
+2|_|o|_|_|_|_|_|_|
+1|_|_|o|_|_|_|x|_|
+  a b c d e f g h
+
+Player O - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+2b-1a
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|_|_|_|_|_|_|
+6|_|_|_|x|_|x|_|_|
+5|_|_|_|_|_|_|_|_|
+4|_|_|_|_|_|_|_|_|
+3|_|_|_|_|_|_|_|_|
+2|_|_|_|_|_|_|_|_|
+1|o|_|o|_|_|_|x|_|
+  a b c d e f g h
+
+Player X - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+1g-2f
+
+8|_|o|_|o|_|o|_|o|
+7|_|_|_|_|_|_|_|_|
+6|_|_|_|x|_|x|_|_|
+5|_|_|_|_|_|_|_|_|
+4|_|_|_|_|_|_|_|_|
+3|_|_|_|_|_|_|_|_|
+2|_|_|_|_|_|x|_|_|
+1|o|_|o|_|_|_|_|_|
+  a b c d e f g h
+
+Player O - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+8b-7c
+
+8|_|_|_|o|_|o|_|o|
+7|_|_|o|_|_|_|_|_|
+6|_|_|_|x|_|x|_|_|
+5|_|_|_|_|_|_|_|_|
+4|_|_|_|_|_|_|_|_|
+3|_|_|_|_|_|_|_|_|
+2|_|_|_|_|_|x|_|_|
+1|o|_|o|_|_|_|_|_|
+  a b c d e f g h
+
+Player X - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+6d-8b
+
+8|_|x|_|o|_|o|_|o|
+7|_|_|_|_|_|_|_|_|
+6|_|_|_|_|_|x|_|_|
+5|_|_|_|_|_|_|_|_|
+4|_|_|_|_|_|_|_|_|
+3|_|_|_|_|_|_|_|_|
+2|_|_|_|_|_|x|_|_|
+1|o|_|o|_|_|_|_|_|
+  a b c d e f g h
+
+Player O - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+8f-7g
+
+8|_|x|_|o|_|_|_|o|
+7|_|_|_|_|_|_|o|_|
+6|_|_|_|_|_|x|_|_|
+5|_|_|_|_|_|_|_|_|
+4|_|_|_|_|_|_|_|_|
+3|_|_|_|_|_|_|_|_|
+2|_|_|_|_|_|x|_|_|
+1|o|_|o|_|_|_|_|_|
+  a b c d e f g h
+
+Player X - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+6f-7e
+
+8|_|x|_|o|_|_|_|o|
+7|_|_|_|_|x|_|o|_|
+6|_|_|_|_|_|_|_|_|
+5|_|_|_|_|_|_|_|_|
+4|_|_|_|_|_|_|_|_|
+3|_|_|_|_|_|_|_|_|
+2|_|_|_|_|_|x|_|_|
+1|o|_|o|_|_|_|_|_|
+  a b c d e f g h
+
+Player O - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+8d-6f
+
+8|_|x|_|_|_|_|_|o|
+7|_|_|_|_|_|_|o|_|
+6|_|_|_|_|_|o|_|_|
+5|_|_|_|_|_|_|_|_|
+4|_|_|_|_|_|_|_|_|
+3|_|_|_|_|_|_|_|_|
+2|_|_|_|_|_|x|_|_|
+1|o|_|o|_|_|_|_|_|
+  a b c d e f g h
+
+Player X - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+2f-3g
+
+8|_|x|_|_|_|_|_|o|
+7|_|_|_|_|_|_|o|_|
+6|_|_|_|_|_|o|_|_|
+5|_|_|_|_|_|_|_|_|
+4|_|_|_|_|_|_|_|_|
+3|_|_|_|_|_|_|x|_|
+2|_|_|_|_|_|_|_|_|
+1|o|_|o|_|_|_|_|_|
+  a b c d e f g h
+
+Player O - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+6f-5g
+
+8|_|x|_|_|_|_|_|o|
+7|_|_|_|_|_|_|o|_|
+6|_|_|_|_|_|_|_|_|
+5|_|_|_|_|_|_|o|_|
+4|_|_|_|_|_|_|_|_|
+3|_|_|_|_|_|_|x|_|
+2|_|_|_|_|_|_|_|_|
+1|o|_|o|_|_|_|_|_|
+  a b c d e f g h
+
+Player X - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+3g-4h
+
+8|_|x|_|_|_|_|_|o|
+7|_|_|_|_|_|_|o|_|
+6|_|_|_|_|_|_|_|_|
+5|_|_|_|_|_|_|o|_|
+4|_|_|_|_|_|_|_|x|
+3|_|_|_|_|_|_|_|_|
+2|_|_|_|_|_|_|_|_|
+1|o|_|o|_|_|_|_|_|
+  a b c d e f g h
+
+Player O - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+5g-4f
+
+8|_|x|_|_|_|_|_|o|
+7|_|_|_|_|_|_|o|_|
+6|_|_|_|_|_|_|_|_|
+5|_|_|_|_|_|_|_|_|
+4|_|_|_|_|_|o|_|x|
+3|_|_|_|_|_|_|_|_|
+2|_|_|_|_|_|_|_|_|
+1|o|_|o|_|_|_|_|_|
+  a b c d e f g h
+
+Player X - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+4h-5g
+
+8|_|x|_|_|_|_|_|o|
+7|_|_|_|_|_|_|o|_|
+6|_|_|_|_|_|_|_|_|
+5|_|_|_|_|_|_|x|_|
+4|_|_|_|_|_|o|_|_|
+3|_|_|_|_|_|_|_|_|
+2|_|_|_|_|_|_|_|_|
+1|o|_|o|_|_|_|_|_|
+  a b c d e f g h
+
+Player O - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+4f-3e
+
+8|_|x|_|_|_|_|_|o|
+7|_|_|_|_|_|_|o|_|
+6|_|_|_|_|_|_|_|_|
+5|_|_|_|_|_|_|x|_|
+4|_|_|_|_|_|_|_|_|
+3|_|_|_|_|o|_|_|_|
+2|_|_|_|_|_|_|_|_|
+1|o|_|o|_|_|_|_|_|
+  a b c d e f g h
+
+Player X - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+5g-6h
+
+8|_|x|_|_|_|_|_|o|
+7|_|_|_|_|_|_|o|_|
+6|_|_|_|_|_|_|_|x|
+5|_|_|_|_|_|_|_|_|
+4|_|_|_|_|_|_|_|_|
+3|_|_|_|_|o|_|_|_|
+2|_|_|_|_|_|_|_|_|
+1|o|_|o|_|_|_|_|_|
+  a b c d e f g h
+
+Player O - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+3e-2d
+
+8|_|x|_|_|_|_|_|o|
+7|_|_|_|_|_|_|o|_|
+6|_|_|_|_|_|_|_|x|
+5|_|_|_|_|_|_|_|_|
+4|_|_|_|_|_|_|_|_|
+3|_|_|_|_|_|_|_|_|
+2|_|_|_|o|_|_|_|_|
+1|o|_|o|_|_|_|_|_|
+  a b c d e f g h
+
+Player X - your turn.
+Choose a cell position of piece to be moved and the new position. e.g., 3a-4b
+6h-8f
+Player O Won the Game
+Total Turns: 63
+
+BUILD SUCCESSFUL in 11m 37s
+2 actionable tasks: 1 executed, 1 up-to-date
+PS C:\Users\howfe\Desktop\Assignment2>
