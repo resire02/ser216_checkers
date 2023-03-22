@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"edu.ser216.checkers.core"},{"l":"edu.ser216.checkers.ui"}];updateSearchResults();
