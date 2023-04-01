@@ -25,20 +25,23 @@ public class CheckersGameLogic implements CheckersGame
     private Scanner scanner;                    //  reads input
     private char gameStyle;                     //  determines PvP or PvC
     private CheckersComputerPlayer computer;    //  computer player
+    private char appType;                       //  console or GUI interface ('c' or 'a')
 
     /**
      * Constructor for CheckersGameLogic, sets up the game board
      * 
      * @param scanner object to read input
      */
-    public CheckersGameLogic(Scanner scanner)
+    public CheckersGameLogic(Scanner scanner, char appType)
     {
         //  assign variable values
+        this.appType = appType;
         this.scanner = scanner;
         currentPlayerTurn = 'x';
         currentTurn = null;
         totalMoves = 0;
         computer = null;
+        gameStyle = ' ';
 
         //  setup the board
         setupBoard();
@@ -167,6 +170,32 @@ public class CheckersGameLogic implements CheckersGame
         else
         {
             currentPlayerTurn = 'x';
+        }
+    }
+
+    public String handleTurn(String turn)
+    {
+        if(gameStyle == ' ') return null;
+        if(gameStyle == 'c' && totalMoves == 0) computer = new CheckersComputerPlayer(this);
+
+        try 
+        {
+            if(currentPlayerTurn == 'o' && gameStyle == 'c')
+                currentTurn = new CheckersGameMove(computer.computeMove());
+            else
+                currentTurn = new CheckersGameMove(turn);
+
+            if(!validateMove()) throw new IllegalStateException("Not a valid move");
+
+            doPlayerTurn();
+
+            totalMoves++;
+
+            return turn;
+        }
+        catch(IllegalStateException ex)
+        {
+            throw new IllegalStateException(ex.getMessage());
         }
     }
 
@@ -547,6 +576,11 @@ public class CheckersGameLogic implements CheckersGame
         }
         
         return false;
+    }
+
+    public void setGameStyle(char gameStyle)
+    {
+        this.gameStyle = gameStyle;
     }
 
     /**

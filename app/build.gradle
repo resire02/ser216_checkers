@@ -17,8 +17,8 @@ javafx {
     modules = [ 'javafx.graphics', 'javafx.controls' ]
 }
 
-sourceCompatibility = '19'
-targetCompatibility = '19'
+// sourceCompatibility = '19'
+// targetCompatibility = '19'
 
 repositories {
     // Use Maven Central for resolving dependencies.
