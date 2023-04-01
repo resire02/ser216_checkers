@@ -1,6 +1,5 @@
 package edu.ser216.checkers.gui;
 
-import edu.ser216.checkers.core.CheckersGame;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.HPos;
@@ -41,8 +40,6 @@ public class CheckerBoard extends GridPane
 
     /**
      * Constructor for CheckerBoard
-     * 
-     * @param game reference to be stored
      */
     public CheckerBoard()
     {

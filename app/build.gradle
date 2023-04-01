@@ -51,4 +51,11 @@ task docs(type: Javadoc) {
     source = sourceSets.main.allJava
     destinationDir = file('/javadoc')
     title = 'CheckersGame'
+    failOnError = true
+    
+    options.setModulePath(
+        [ file("./javafx-sdk/lib/javafx.base.jar"), file("./javafx-sdk/lib/javafx.controls.jar"), file("./javafx-sdk/lib/javafx.graphics.jar") ]
+    )
+    options.addStringOption("-add-modules", "ALL-MODULE-PATH")
+    options.addStringOption("-Xdoclint:none")
 }

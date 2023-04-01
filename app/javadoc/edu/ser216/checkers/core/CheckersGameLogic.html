@@ -133,6 +133,16 @@ implements <a href="CheckersGame.html" title="interface in edu.ser216.checkers.c
 <div class="block">Handles the next player's turn and updates the board accordingly.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>char</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getCurrentTurn()" class="member-name-link">getCurrentTurn</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Retrieves the current players turn</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>char</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getGameStyle()" class="member-name-link">getGameStyle</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Retrieves the game style of the game</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>char</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSquare(int,int)" class="member-name-link">getSquare</a><wbr>(int&nbsp;row,
  int&nbsp;column)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
@@ -144,15 +154,25 @@ implements <a href="CheckersGame.html" title="interface in edu.ser216.checkers.c
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Returns a value representing the winning player</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#nextTurn()" class="member-name-link">nextTurn</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#handleTurn(java.lang.String)" class="member-name-link">handleTurn</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;turn)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Switches the turn to the non-active player's turn.</div>
+<div class="block">Handles turns for CheckersGUI</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#onEnd()" class="member-name-link">onEnd</a>()</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#nextTurn()" class="member-name-link">nextTurn</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Switches the turn to the non-active player's turn.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#onEnd()" class="member-name-link">onEnd</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Handles the end of the game and resets game to original state</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setGameStyle(char)" class="member-name-link">setGameStyle</a><wbr>(char&nbsp;gameStyle)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the game style of the game</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setSquare(int,int,char)" class="member-name-link">setSquare</a><wbr>(int&nbsp;row,
@@ -269,6 +289,22 @@ implements <a href="CheckersGame.html" title="interface in edu.ser216.checkers.c
 </section>
 </li>
 <li>
+<section class="detail" id="handleTurn(java.lang.String)">
+<h3>handleTurn</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">handleTurn</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;turn)</span>
+                  throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/IllegalStateException.html" title="class or interface in java.lang" class="external-link">IllegalStateException</a></span></div>
+<div class="block">Handles turns for CheckersGUI</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>turn</code> - to be made</dd>
+<dt>Returns:</dt>
+<dd>String representing valid turn that was made</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/IllegalStateException.html" title="class or interface in java.lang" class="external-link">IllegalStateException</a></code> - if inputted turn is not valid</dd>
+</dl>
+</section>
+</li>
+<li>
 <section class="detail" id="doTurn()">
 <h3>doTurn</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">doTurn</span>()</div>
@@ -287,6 +323,38 @@ implements <a href="CheckersGame.html" title="interface in edu.ser216.checkers.c
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="CheckersGame.html#onEnd()">onEnd</a></code>&nbsp;in interface&nbsp;<code><a href="CheckersGame.html" title="interface in edu.ser216.checkers.core">CheckersGame</a></code></dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="setGameStyle(char)">
+<h3>setGameStyle</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setGameStyle</span><wbr><span class="parameters">(char&nbsp;gameStyle)</span></div>
+<div class="block">Sets the game style of the game</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>gameStyle</code> - of game, acceptable values are 'p' and 'c'</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getGameStyle()">
+<h3>getGameStyle</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">char</span>&nbsp;<span class="element-name">getGameStyle</span>()</div>
+<div class="block">Retrieves the game style of the game</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>char representing gameStyle</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getCurrentTurn()">
+<h3>getCurrentTurn</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">char</span>&nbsp;<span class="element-name">getCurrentTurn</span>()</div>
+<div class="block">Retrieves the current players turn</div>
+<dl class="notes">
+<dt>Returns:</dt>
 </dl>
 </section>
 </li>
