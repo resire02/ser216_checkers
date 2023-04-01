@@ -25,17 +25,15 @@ public class CheckersGameLogic implements CheckersGame
     private Scanner scanner;                    //  reads input
     private char gameStyle;                     //  determines PvP or PvC
     private CheckersComputerPlayer computer;    //  computer player
-    private char appType;                       //  console or GUI interface ('c' or 'a')
 
     /**
      * Constructor for CheckersGameLogic, sets up the game board
      * 
      * @param scanner object to read input
      */
-    public CheckersGameLogic(Scanner scanner, char appType)
+    public CheckersGameLogic(Scanner scanner)
     {
         //  assign variable values
-        this.appType = appType;
         this.scanner = scanner;
         currentPlayerTurn = 'x';
         currentTurn = null;
@@ -173,18 +171,31 @@ public class CheckersGameLogic implements CheckersGame
         }
     }
 
-    public String handleTurn(String turn)
+    /**
+     * Handles turns for CheckersGUI
+     * 
+     * @param turn to be made
+     * @throws IllegalStateException if inputted turn is not valid
+     * @return String representing valid turn that was made
+     */
+    public String handleTurn(String turn) throws IllegalStateException
     {
+        //  check if gameStyle was set
         if(gameStyle == ' ') return null;
+
+        //  initalize computer
         if(gameStyle == 'c' && totalMoves == 0) computer = new CheckersComputerPlayer(this);
 
+        //  read player turn
         try 
         {
+            //  compute player or computer move
             if(currentPlayerTurn == 'o' && gameStyle == 'c')
                 currentTurn = new CheckersGameMove(computer.computeMove());
             else
                 currentTurn = new CheckersGameMove(turn);
 
+            //  exit method early if not valid
             if(!validateMove()) throw new IllegalStateException("Not a valid move");
 
             doPlayerTurn();
@@ -578,9 +589,32 @@ public class CheckersGameLogic implements CheckersGame
         return false;
     }
 
+    /**
+     * Sets the game style of the game
+     * @param gameStyle of game, acceptable values are 'p' and 'c'
+     */
     public void setGameStyle(char gameStyle)
     {
-        this.gameStyle = gameStyle;
+        if(gameStyle == 'c' || gameStyle == 'p')
+            this.gameStyle = gameStyle;
+    }
+
+    /**
+     * Retrieves the game style of the game
+     * @return char representing gameStyle
+     */
+    public char getGameStyle()
+    {
+        return gameStyle;
+    }
+
+    /**
+     * Retrieves the current players turn
+     * @return
+     */
+    public char getCurrentTurn()
+    {
+        return currentPlayerTurn;
     }
 
     /**

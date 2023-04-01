@@ -12,15 +12,25 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.TextAlignment;
 
+/**
+ * Represents the side panel module of CheckersGUI
+ * 
+ * @author Felix
+ * @version 1.0
+ */
 public class CheckersConsoleLabel extends HBox
 {
     protected static Label console;
     private Button b1, b2;
 
+    /**
+     * Constructor for CheckersConsoleLabel
+     */
     public CheckersConsoleLabel()
     {
         console = new Label("");
 
+        //  set custom text formatting
         console.setAlignment(Pos.CENTER);
         console.setTextFill(Color.WHITE);
         console.setFont(Font.font("Verdana", 20));
@@ -35,13 +45,20 @@ public class CheckersConsoleLabel extends HBox
 
         getChildren().addAll(console, b1, b2);
 
+        //  align parent
         setAlignment(Pos.CENTER);
         setPadding(new Insets(20));
         setSpacing(20);
     }
 
+    /**
+     * PromptHandler class for determining gameStyle
+     */
     private class PromptHandler implements EventHandler<ActionEvent>
     {
+        /**
+         * read gameStyle and delete button afterward
+         */
         public void handle(ActionEvent event) 
         {
             Button source = (Button) event.getSource();
@@ -52,12 +69,17 @@ public class CheckersConsoleLabel extends HBox
             }
             else
             {
+                //  set player2 name to "Computer"
                 CheckersGUI.checkersGame.setGameStyle('c');
+                CheckersGUI.player2 = "Computer";
+                ((UserPanel) CheckersGUI.getMainPane().getRight()).setPlayerName("Computer");
             }
 
             removeButtons();
 
             CheckersConsoleLabel.console.setText("Begin Game.");
+
+            ((UserPanel) CheckersGUI.getMainPane().getLeft()).toggleTurn();
         }
     }
 

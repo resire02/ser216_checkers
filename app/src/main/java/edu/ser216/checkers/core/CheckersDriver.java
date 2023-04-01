@@ -37,7 +37,7 @@ public class CheckersDriver
 
         if(appType == 'c')
         {
-            CheckersGame game = new CheckersGameLogic(scan, appType);
+            CheckersGame game = new CheckersGameLogic(scan);
 
             while (game.getWinningPlayer() == '_') {
                 if(appType == 'c') System.out.println(console.printBoard(game));

@@ -1,8 +1,6 @@
 package edu.ser216.checkers.gui;
 
 import java.util.Scanner;
-
-import edu.ser216.checkers.core.CheckersGame;
 import edu.ser216.checkers.core.CheckersGameLogic;
 import javafx.application.Application;
 import javafx.geometry.Insets;
@@ -20,31 +18,61 @@ import javafx.scene.text.Font;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 
+/**
+ * CheckersGUI class for GUI module of CheckersGame
+ * 
+ * @author Felix
+ * @version 1.0
+ */
 public class CheckersGUI extends Application
 {
-    private final String APP_NAME = "Checkers";
-    protected static CheckersGameLogic checkersGame;
-    private BorderPane mainPane;
-    protected static final int WIDTH = 700;
-    protected static final int HEIGHT = 550;
+    //  member variables
+    private final String APP_NAME = "Checkers";         //  application name
+    protected static CheckersGameLogic checkersGame;    //  copy of CheckersGame
+    private static BorderPane mainPane;                 //  main pane container
+    protected static final int WIDTH = 700;             //  starting width dimension
+    protected static final int HEIGHT = 550;            //  starting height dimension
+    protected static String player1 = "You";            //  player1 name
+    protected static String player2 = "Opponent";       //  player2 name
 
+    /**
+     * Launches the application
+     * 
+     * @param args command line arguments
+     */
     public static void launchApp(String[] args)
     {
         launch(args);
     }
 
-    private Parent setupBorderPanel()
+    /**
+     * Retrieves the main container for Scene
+     * 
+     * @return BorderPane contain all visual nodes
+     */
+    protected static BorderPane getMainPane()
     {
+        return mainPane;
+    }
+
+    /**
+     * Sets up the main panel
+     * 
+     * @return Parent object in Scene
+     */
+    private static Parent setupBorderPanel()
+    {
+        //  initialize sub panels
         mainPane = new BorderPane();
 
-        UserPanel leftPanel = new UserPanel("You", "player.png");
-        UserPanel rightPanel = new UserPanel("Opponent", "player.png");
-        CheckerBoard board = new CheckerBoard(checkersGame);
+        UserPanel leftPanel = new UserPanel(player1, "player.png");
+        UserPanel rightPanel = new UserPanel(player2, "player.png");
+        CheckerBoard board = new CheckerBoard();
         CheckersConsoleLabel console = new CheckersConsoleLabel();
         HBox topContainer = new HBox();
-        
-        Label title = new Label("Checkers");
 
+        //  set up title label
+        Label title = new Label("Checkers");
         title.setTextFill(Color.WHITE);
         title.setFont(Font.font("Verdana", 45));
         title.setPadding(new Insets(10, 0, 10, 20));
@@ -58,6 +86,7 @@ public class CheckersGUI extends Application
         mainPane.setBottom(console);
         mainPane.setTop(topContainer);
 
+        //  set background
         mainPane.setBackground(new Background(new BackgroundFill(LinearGradient.valueOf(
             "linear-gradient(from 0% 0% to 100% 100%, #011FD8 0%, #2F51B2 50%, #F2938A 100%)"),
             CornerRadii.EMPTY,
@@ -67,17 +96,21 @@ public class CheckersGUI extends Application
         return mainPane;
     }
     
+    /**
+     * Application launch method
+     * 
+     * @param stage to be displayed
+     */
     public void start(Stage stage)
     {
+        //  setup checkers game
         Scanner scan = new Scanner(System.in);
-
-        checkersGame = new CheckersGameLogic(scan, 'a');
+        checkersGame = new CheckersGameLogic(scan);
         
+        //  setup scene
         Scene mainGUI = new Scene(setupBorderPanel(), WIDTH, HEIGHT);
 
-        // stage.minWidthProperty().bind(mainGUI.heightProperty().multiply(1.5));
-        // stage.minHeightProperty().bind(mainGUI.widthProperty().divide(1.5));
-
+        //  display scene
         stage.setScene(mainGUI);
         stage.setTitle(APP_NAME);
         stage.show();
