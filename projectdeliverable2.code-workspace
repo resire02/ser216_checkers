@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "app"
+		},
+		{
+			"path": "gradle"
+		}
+	],
+	"settings": {
+		"java.compile.nullAnalysis.mode": "automatic"
+	}
+}
