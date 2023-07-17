@@ -10,6 +10,7 @@ plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     id 'application'
     id 'org.openjfx.javafxplugin' version '0.0.13'
+    id 'jacoco'
 }
 
 javafx {
@@ -45,8 +46,17 @@ run {
 tasks.named('test') {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
+    finalizedBy jacocoTestReport
 }
 
+jacocoTestReport {
+    dependsOn test
+    reports {
+        html.outputLocation = layout.buildDirectory.dir('jacoco')
+    }
+}
+
+// https://docs.gradle.org/current/javadoc/org/gradle/external/javadoc/CoreJavadocOptions.html#modulePath-java.util.List-
 task docs(type: Javadoc) {
     source = sourceSets.main.allJava
     destinationDir = file('/javadoc')

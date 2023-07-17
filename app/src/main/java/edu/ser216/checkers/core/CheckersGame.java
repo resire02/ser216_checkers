@@ -20,7 +20,7 @@ public interface CheckersGame {
      *   3|x|_|x|_|x|_|x|_|
      *   2|_|x|_|x|_|x|_|x|
      *   1|x|_|x|_|x|_|x|_|
-     *   a b c d e f g h
+     *     a b c d e f g h
        getSquare(0,0) would return 'x'.
 
      * @param row Row.

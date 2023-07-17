@@ -646,9 +646,9 @@ public class CheckersGameLogic implements CheckersGame
              * 3) does the middle of the string contain a dash?
              * 4) are the characters at index 0 and 3 numbers?
              * 5) are both the numbers between the range of 1 to 8?
-             * 6) are the letters are index 1 and 4 letter?
+             * 6) are the letters are index 1 and 4 lee characters between a and h?tter?
              * 7) are the letters lowercase?
-             * 6) are the characters between a and h?
+             * 6) are th
              */
             if(move != null && move.length() == 5 && move.charAt(2) == '-' && 
             Character.isDigit(move.charAt(0)) && Character.isDigit(move.charAt(3)) &&

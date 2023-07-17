@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.HPos;
 import javafx.geometry.VPos;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.layout.Border;
 import javafx.scene.layout.BorderStroke;
@@ -31,7 +32,6 @@ public class CheckerBoard extends GridPane
     private final String SQUARE_COLOR_2 = "#9DE3FF";                //  color of secondary square
     private final String PIECE_COLOR_1 = "#E94848";                 //  color of 'x' piece
     private final String PIECE_COLOR_2 = "#F6E408";                 //  color of 'o' piece
-    private Button[][] board;                                       //  2d array of buttons
     private final int width = 50;                                   //  pref width of button
     private final int height = 50;                                  //  pref height of button
     private static CheckersSquare[] move = new CheckersSquare[2];   //  temp array storing move made
@@ -44,7 +44,6 @@ public class CheckerBoard extends GridPane
     public CheckerBoard()
     {
         //  initalize variables
-        board = new Button[BOARD_SIZE][BOARD_SIZE];
         turn = 'x';
 
         //  set black border
@@ -85,9 +84,6 @@ public class CheckerBoard extends GridPane
                 //  store col and row info
                 Button button = new CheckersSquare(CheckersGUI.checkersGame.getSquare(row, col), row, col);
 
-                //  update board array
-                board[BOARD_SIZE - row - 1][col] = button;
-
                 //  set listener
                 button.setOnAction(new ButtonHandler());
 
@@ -104,6 +100,17 @@ public class CheckerBoard extends GridPane
                 setValignment(button, VPos.CENTER);
                 setHalignment(button, HPos.CENTER);
             }
+        }
+    }
+
+    /**
+     * Clears the listeners off the buttons in the gridPane
+     */
+    private void removeListeners()
+    {
+        for(Node button : getChildren())
+        {
+            ((Button) button).setOnAction(null);
         }
     }
 
@@ -220,13 +227,7 @@ public class CheckerBoard extends GridPane
                     CheckersConsoleLabel.console.setText(CheckersGUI.player2 + " won the game.");
 
                 //  remove listeners
-                for(Button[] row : board)
-                {
-                    for(Button b : row)
-                    {
-                        b.setOnAction(null);
-                    }
-                }
+                removeListeners();
 
                 return true;
             }
@@ -242,8 +243,6 @@ public class CheckerBoard extends GridPane
     {
         //  instance variables stored upon creation
         public String squarePos;
-        public int row, col;
-        public char piece;
         
         /**
          * Constructor for CheckersSquare
@@ -253,11 +252,7 @@ public class CheckerBoard extends GridPane
          * @param col index of square
          */
         public CheckersSquare(char piece, int row, int col)
-        {            
-            this.row = row;
-            this.col = col;
-            this.piece = piece;
-            
+        {                        
             //  create background graphic
             Rectangle shape = new Rectangle(width, height);
             
@@ -288,14 +283,14 @@ public class CheckerBoard extends GridPane
             }
 
             //  set button bound limits
-            setMinHeight(20);
-            setMinWidth(20);
+            setMinHeight(1);
+            setMinWidth(1);
 
             setMaxHeight(Double.MAX_VALUE);
             setMaxWidth(Double.MAX_VALUE);
 
-            setPrefHeight(height + 1);
-            setPrefWidth(width + 1);
+            setPrefHeight(height);
+            setPrefWidth(width);
 
             //  parse button location
             squarePos = "" + (row+1) + intToChar(col);

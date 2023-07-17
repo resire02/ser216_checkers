@@ -23,7 +23,7 @@ public class CheckersComputerPlayer
      * Constructor for CheckersComputerPlayer
      * @param game object reference to game logic
      */
-    public CheckersComputerPlayer(final CheckersGameLogic game)
+    public CheckersComputerPlayer(CheckersGameLogic game)
     {
         this.game = game;
     }
